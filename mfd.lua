@@ -2,6 +2,7 @@ local inspect = require "inspect"
 local htmlparser = require "htmlparser"
 local glue = require "glue"
 
+-- https://github.com/lwthiker/curl-impersonate
 -- curl_chrome104 is a wrapper around curl that sets the user agent to Chrome 104
 -- This is needed because the website checks our request and returns a 403 if not a browser
 local curlCmdTemplate = [[curl_chrome104 -s -L %s]]
